@@ -1,18 +1,12 @@
-name: CI Workflow
+name: Display Message on Push 
 
 on:
   push:
-    branches:
-      - feature-1
-      - main
-
+     
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Print message
         run: echo "GitHub Actions is working!"
